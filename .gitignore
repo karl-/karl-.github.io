@@ -1,0 +1,7 @@
+*.DS_Store
+
+tools/.idea
+tools/*/bin
+tools/*/obj
+tools/*/obj
+tools/**/*.user
