@@ -1,4 +1,6 @@
-﻿static class Entry
+﻿using Markdig;
+
+static class Entry
 {
     static int Main(string[] args)
     {
@@ -12,7 +14,7 @@
             }
 
             var text = File.ReadAllText(path);
-            File.WriteAllText($"{Path.GetFileName(path)}.html", Markdown.ConvertToHtml(text));
+            File.WriteAllText($"{Path.GetFileNameWithoutExtension(path)}.html", Markdown.ToHtml(text));
         }
 
 

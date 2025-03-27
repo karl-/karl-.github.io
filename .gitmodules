@@ -1,0 +1,3 @@
+[submodule "ext/markdig"]
+	path = ext/markdig
+	url = git@github.com:xoofx/markdig.git
